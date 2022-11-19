@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RegLogApp.MainPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+
+        <ScrollView Orientation="Vertical" BackgroundColor="AliceBlue">
+            <StackLayout>
+
+                <Grid BackgroundColor="DodgerBlue" HeightRequest="60" >
+                    <StackLayout Orientation="Horizontal" BackgroundColor="DodgerBlue" HeightRequest="60" Margin="15, 0, 15, 0">
+                        <Button Text="Logout" TextColor="Black" BackgroundColor="DodgerBlue"
+                    HorizontalOptions="StartAndExpand" FontSize="16" x:Name="LogoutBtn" Clicked="LogoutBtn_Clicked"/>
+                        <Label Text="Discover" TextColor="Black"
+                   FontSize="24" HorizontalOptions="EndAndExpand"
+                   FontAttributes="Bold" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Grid>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="AliceBlue" HeightRequest="50"
+                             Margin="10, 10, 0, 0">
+                    <Frame CornerRadius="20" Padding="-10, 0, 0, -10">
+                        <SearchBar Placeholder="Search Countries..." HorizontalOptions="FillAndExpand"
+                           TextTransform="Default"  FontSize="Medium" Keyboard="Text" WidthRequest="400"
+                           TextColor="#264248" CancelButtonColor="Orange" BackgroundColor="AliceBlue"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Grid>
+                        <ScrollView Orientation="Horizontal"  HorizontalScrollBarVisibility="Never">
+                            <StackLayout Orientation="Horizontal" Spacing="-9">
+
+                                <Frame HeightRequest="250" WidthRequest="170"
+                   BackgroundColor="White" Padding="0"
+                   HasShadow="True" Margin="10" CornerRadius="10"
+                   HorizontalOptions="CenterAndExpand">
+                                    <Grid>
+
+                                        <StackLayout>
+                                            <Image Source="norway"
+                           VerticalOptions="Fill"
+                           HeightRequest="250" Opacity="0.8"
+                           Aspect="AspectFill"/>
+                                        </StackLayout>
+
+                                        <StackLayout>
+                                            <Label Text="Discover" TextColor="WhiteSmoke" FontSize="18" 
+                                   FontAttributes="None" Margin="15, 0" 
+                                   VerticalOptions="EndAndExpand" />
+
+                                            <StackLayout Orientation="Horizontal" Margin="15, -10, 0, 0">
+                                                <Image Source="mapPointer"
+                                   HeightRequest="20"
+                                   Aspect="AspectFit"/>
+
+                                                <Label Text="Norway" TextColor="WhiteSmoke" FontSize="15"
+                                   FontAttributes="None"
+                                   VerticalOptions="EndAndExpand"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+
+
+                                </Frame>
+
+                                <Frame HeightRequest="250" WidthRequest="170"
+                   BackgroundColor="White" Padding="0"
+                   HasShadow="True" Margin="10" CornerRadius="10"
+                   HorizontalOptions="CenterAndExpand">
+                                    <Grid>
+
+                                        <StackLayout>
+                                            <Image Source="UnitedKingdom"
+                           VerticalOptions="Fill"
+                           HeightRequest="250" Opacity="0.8"
+                           Aspect="AspectFill"/>
+                                        </StackLayout>
+
+                                        <StackLayout>
+                                            <Label Text="Discover" TextColor="WhiteSmoke" FontSize="18" 
+                                   FontAttributes="None" Margin="15, 0" 
+                                   VerticalOptions="EndAndExpand" />
+
+                                            <StackLayout Orientation="Horizontal" Margin="15, -10, 0, 0">
+                                                <Image Source="mapPointer"
+                                   HeightRequest="20"
+                                   Aspect="AspectFit"/>
+
+                                                <Label Text="United Kingdom" TextColor="WhiteSmoke" FontSize="15"
+                                   FontAttributes="None"
+                                   VerticalOptions="EndAndExpand"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+
+
+                                </Frame>
+
+                                <Frame HeightRequest="250" WidthRequest="170"
+                   BackgroundColor="White" Padding="0"
+                   HasShadow="True" Margin="10" CornerRadius="10"
+                   HorizontalOptions="CenterAndExpand">
+                                    <Grid>
+
+                                        <StackLayout>
+                                            <Image Source="UAE"
+                           VerticalOptions="Fill"
+                           HeightRequest="250" Opacity="0.8"
+                           Aspect="AspectFill"/>
+                                        </StackLayout>
+
+                                        <StackLayout>
+                                            <Label Text="Discover" TextColor="WhiteSmoke" FontSize="18" 
+                                   FontAttributes="None" Margin="15, 0" 
+                                   VerticalOptions="EndAndExpand" />
+
+                                            <StackLayout Orientation="Horizontal" Margin="15, -10, 0, 0">
+                                                <Image Source="mapPointer"
+                                   HeightRequest="20"
+                                   Aspect="AspectFit"/>
+
+                                                <Label Text="UAE" TextColor="WhiteSmoke" FontSize="15"
+                                   FontAttributes="None"
+                                   VerticalOptions="EndAndExpand"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+
+
+                                </Frame>
+
+                                <Frame HeightRequest="250" WidthRequest="170"
+                   BackgroundColor="White" Padding="0"
+                   HasShadow="True" Margin="10" CornerRadius="10"
+                   HorizontalOptions="CenterAndExpand">
+                                    <Grid>
+
+                                        <StackLayout>
+                                            <Image Source="Paris"
+                           VerticalOptions="Fill"
+                           HeightRequest="250" Opacity="0.8"
+                           Aspect="AspectFill"/>
+                                        </StackLayout>
+
+                                        <StackLayout>
+                                            <Label Text="Discover" TextColor="WhiteSmoke" FontSize="18" 
+                                   FontAttributes="None" Margin="15, 0" 
+                                   VerticalOptions="EndAndExpand" />
+
+                                            <StackLayout Orientation="Horizontal" Margin="15, -10, 0, 0">
+                                                <Image Source="mapPointer"
+                                   HeightRequest="20"
+                                   Aspect="AspectFit"/>
+
+                                                <Label Text="Paris" TextColor="WhiteSmoke" FontSize="15"
+                                   FontAttributes="None"
+                                   VerticalOptions="EndAndExpand"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </ScrollView>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical">
+                    <Frame WidthRequest="400"
+                   BackgroundColor="White" Padding="0"
+                   HasShadow="True" Margin="10" CornerRadius="10"
+                   HorizontalOptions="CenterAndExpand">
+                        <Grid>
+
+                            <StackLayout>
+                                <Image Source="norway"
+                           VerticalOptions="Fill"
+                           HeightRequest="350" Opacity="0.8"
+                           Aspect="AspectFill"/>
+                            </StackLayout>
+
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                                <Label Text="Explore" TextColor="WhiteSmoke" FontSize="18" 
+                                   FontAttributes="None" Margin="15, 0" 
+                                   VerticalOptions="EndAndExpand" />
+
+                                <StackLayout Orientation="Horizontal" Margin="15, -10, 0, 0">
+                                    <Image Source="mapPointer"
+                                   HeightRequest="20"
+                                   Aspect="AspectFit"/>
+
+                                    <Label Text="Norway" TextColor="WhiteSmoke" FontSize="15"
+                                   FontAttributes="None"
+                                   VerticalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical">
+                    <Grid>
+                        <ScrollView Orientation="Horizontal"  HorizontalScrollBarVisibility="Never" >
+                            <StackLayout Orientation="Horizontal" Spacing="-9">
+
+                                <Frame HeightRequest="250" WidthRequest="170"
+                   BackgroundColor="White" Padding="0"
+                   HasShadow="True" Margin="10" CornerRadius="10"
+                   HorizontalOptions="CenterAndExpand">
+                                    <Grid>
+
+                                        <StackLayout>
+                                            <Image Source="norway"
+                           VerticalOptions="Fill"
+                           HeightRequest="250" Opacity="0.8"
+                           Aspect="AspectFill"/>
+                                        </StackLayout>
+
+                                        <StackLayout>
+                                            <Label Text="Discover" TextColor="WhiteSmoke" FontSize="18" 
+                                   FontAttributes="None" Margin="15, 0" 
+                                   VerticalOptions="EndAndExpand" />
+
+                                            <StackLayout Orientation="Horizontal" Margin="15, -10, 0, 0">
+                                                <Image Source="mapPointer"
+                                   HeightRequest="20"
+                                   Aspect="AspectFit"/>
+
+                                                <Label Text="Norway" TextColor="WhiteSmoke" FontSize="15"
+                                   FontAttributes="None"
+                                   VerticalOptions="EndAndExpand"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+
+
+                                </Frame>
+
+                                <Frame HeightRequest="250" WidthRequest="170"
+                   BackgroundColor="White" Padding="0"
+                   HasShadow="True" Margin="10" CornerRadius="10"
+                   HorizontalOptions="CenterAndExpand">
+                                    <Grid>
+
+                                        <StackLayout>
+                                            <Image Source="UnitedKingdom"
+                           VerticalOptions="Fill"
+                           HeightRequest="250" Opacity="0.8"
+                           Aspect="AspectFill"/>
+                                        </StackLayout>
+
+                                        <StackLayout>
+                                            <Label Text="Discover" TextColor="WhiteSmoke" FontSize="18" 
+                                   FontAttributes="None" Margin="15, 0" 
+                                   VerticalOptions="EndAndExpand" />
+
+                                            <StackLayout Orientation="Horizontal" Margin="15, -10, 0, 0">
+                                                <Image Source="mapPointer"
+                                   HeightRequest="20"
+                                   Aspect="AspectFit"/>
+
+                                                <Label Text="United Kingdom" TextColor="WhiteSmoke" FontSize="15"
+                                   FontAttributes="None"
+                                   VerticalOptions="EndAndExpand"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+
+
+                                </Frame>
+
+                                <Frame HeightRequest="250" WidthRequest="170"
+                   BackgroundColor="White" Padding="0"
+                   HasShadow="True" Margin="10" CornerRadius="10"
+                   HorizontalOptions="CenterAndExpand">
+                                    <Grid>
+
+                                        <StackLayout>
+                                            <Image Source="UAE"
+                           VerticalOptions="Fill"
+                           HeightRequest="250" Opacity="0.8"
+                           Aspect="AspectFill"/>
+                                        </StackLayout>
+
+                                        <StackLayout>
+                                            <Label Text="Discover" TextColor="WhiteSmoke" FontSize="18" 
+                                   FontAttributes="None" Margin="15, 0" 
+                                   VerticalOptions="EndAndExpand" />
+
+                                            <StackLayout Orientation="Horizontal" Margin="15, -10, 0, 0">
+                                                <Image Source="mapPointer"
+                                   HeightRequest="20"
+                                   Aspect="AspectFit"/>
+
+                                                <Label Text="UAE" TextColor="WhiteSmoke" FontSize="15"
+                                   FontAttributes="None"
+                                   VerticalOptions="EndAndExpand"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+
+
+                                </Frame>
+
+                                <Frame HeightRequest="250" WidthRequest="170"
+                   BackgroundColor="White" Padding="0"
+                   HasShadow="True" Margin="10" CornerRadius="10"
+                   HorizontalOptions="CenterAndExpand">
+                                    <Grid>
+
+                                        <StackLayout>
+                                            <Image Source="Paris"
+                           VerticalOptions="Fill"
+                           HeightRequest="250" Opacity="0.8"
+                           Aspect="AspectFill"/>
+                                        </StackLayout>
+
+                                        <StackLayout>
+                                            <Label Text="Discover" TextColor="WhiteSmoke" FontSize="18" 
+                                   FontAttributes="None" Margin="15, 0" 
+                                   VerticalOptions="EndAndExpand" />
+
+                                            <StackLayout Orientation="Horizontal" Margin="15, -10, 0, 0">
+                                                <Image Source="mapPointer"
+                                   HeightRequest="20"
+                                   Aspect="AspectFit"/>
+
+                                                <Label Text="Paris" TextColor="WhiteSmoke" FontSize="15"
+                                   FontAttributes="None"
+                                   VerticalOptions="EndAndExpand"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </ScrollView>
+                    </Grid>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
